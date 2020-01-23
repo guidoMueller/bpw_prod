@@ -1,0 +1,60 @@
+{
+  "welcomeFile": "index.html",
+  "authenticationMethod": "none",
+  "routes": [
+    {
+      "path": "/destinations/NDB",
+      "target": {
+        "type": "destination",
+        "name": "NDB"
+      },
+      "description": "UOP"
+    },
+    {
+      "path": "/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources"
+      },
+      "description": "SAPUI5 Test Resources"
+    },
+    {
+       "path": "/themedesignerPath", 
+       "target": {
+           "type": "application",
+           "name": "themedesigner"
+       },
+       "description": "Route for UI theme designer"
+    }
+  ],
+  "cacheControl": [
+    {
+      "directive": "private",
+      "maxAge": 0,
+      "path": "*html"
+    },
+    {
+      "directive": "public",
+      "maxAge": 31536000
+    }
+  ],
+  "securityConstraints": [
+        {
+             "permission": "AccessApplicationDescriptor",
+                "description": "Access application descriptor",
+                "protectedPaths": [
+                    "/neo-app.json"
+                ]
+            }
+    ]
+}

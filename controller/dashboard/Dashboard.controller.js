@@ -8,7 +8,7 @@ sap.ui.define("com/bpw/complaints/controller/dashboard/Dashboard.controller", ["
 		onInit: function onInit() {
 			var oJSONModel = new JSONModel();
 			this.getView().setModel(oJSONModel);
-			console.log("Test deployment test 6");
+			console.log("Test deployment test 8");
 		},
 		_loadInfoData: function _loadInfoData() {
 			var model = this.getView().getModel();
